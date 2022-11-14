@@ -27,3 +27,7 @@
         - getFilm and getAllFilms
     - render.utils
         - renderCard, renderFilmDetail
+
+### fonts
+
+font-family: 'Roboto Condensed', sans-serif;
