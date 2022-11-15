@@ -2,6 +2,7 @@ import { getFilm, getFilms } from './fetch.utils';
 import { renderFilms } from './render.utils.js';
 
 /* Get DOM Elements */
+const filmListContainer = document.getElementById('film');
 
 /* State */
 
