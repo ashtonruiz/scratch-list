@@ -7,7 +7,7 @@ export function renderCard(film) {
     div.classList.add('film-card');
 
     p.textContent = film.name;
-    img.src = `./assets/vincent-${id}.jpg`;
+    img.src = `./assets/vincent-${film.id}.jpg`;
     // a.href =
 
     div.append(p, img);
@@ -39,7 +39,7 @@ export function renderFilms(film) {
     descriptionEl.textContent = film.description;
     descriptionEl.classList.add('description');
 
-    img.src = `./assets/vincent-${id}.jpg`;
+    img.src = `./assets/vincent-${film.id}.jpg`;
 
     div.append(filmEl, yearEl, characterNameEl, descriptionEl, img);
 
