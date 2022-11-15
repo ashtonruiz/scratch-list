@@ -6,7 +6,7 @@ export function renderCard(film) {
 
     div.classList.add('film-card');
 
-    p.textContent = film.year;
+    p.textContent = film.film;
     img.textContent = img;
     a.href = `./details/?id=${film.id}`;
 
