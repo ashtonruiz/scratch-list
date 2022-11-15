@@ -1,4 +1,4 @@
-/* Imports */
+import { getFilm, getFilms } from './fetch.utils';
 
 /* Get DOM Elements */
 
