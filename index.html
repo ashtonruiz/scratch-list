@@ -7,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <!-- title and favicon -->
-        <title>Web App</title>
-        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <title>VPDB</title>
+        <link rel="icon" type="image/x-icon" href="assets/ashtonemote.png" />
 
         <!-- js -->
         <script
@@ -29,15 +29,21 @@
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/style.css" />
         <!-- add link for page specific css -->
     </head>
 
     <body>
         <header>
-            <img class="logo" src="assets/html_css_js.png" alt="logo" />
-            <h1>Web App</h1>
+            <a href="./">Home</a>
+            <h1>VPDB</h1>
+            <h2>Like IMDB but only for Vincent Price</h2>
         </header>
-
-        <main></main>
+        <main>
+            <section class="main-section">
+                <h3>Search through Vincent Price's many works for your next movie night</h3>
+                <div id="film-list-container"></div>
+            </section>
+        </main>
     </body>
 </html>
