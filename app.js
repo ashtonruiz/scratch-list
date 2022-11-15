@@ -2,12 +2,12 @@ import { getFilm, getFilms } from './fetch.utils';
 import { renderFilms } from './render.utils.js';
 
 /* Get DOM Elements */
-const filmListContainer = document.getElementById('film');
+const filmListContainer = document.getElementById('film-list-container');
 
-/* State */
-
-/* Events */
-
-/* Display Functions */
-
-// (don't forget to call any display functions you want to run on page load!)
+window.addEventListener('load', async () => {
+    const films = await getFilms();
+    for (let film of films) {
+        const filmEl = renderFilms(film);
+        filmListContainer.append(filmEl);
+    }
+});
