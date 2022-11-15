@@ -1,4 +1,3 @@
-// I guarantee renderCard is incorrect here I think I need to be using something different.
 export function renderCard(film) {
     const div = document.createElement('div');
     const img = document.createElement('img');
@@ -7,7 +6,7 @@ export function renderCard(film) {
 
     div.classList.add('film-card');
 
-    p.textContent = film;
+    p.textContent = film.year;
     img.textContent = img;
     a.href = `./details/?id=${film.id}`;
 
@@ -18,8 +17,7 @@ export function renderCard(film) {
     return a;
 }
 
-// pretty sure line 21 is the issue. I should not be using renderFilms... but a secret third thing
-export function renderFilms(film) {
+export function renderFilmDetail(film) {
     const div = document.createElement('div');
     const imgEl = document.createElement('img');
     const descriptionEl = document.createElement('p');
