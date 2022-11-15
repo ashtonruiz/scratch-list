@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 90%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.btn-slice {
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    color: rgb(206, 194, 194);
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 90%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.vincent-img {
+    height: 400px;
+}
+
+a {
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+
+#film-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.film-detail {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 5px black;
+    font-size: 19px;
+}
+
+.film-name {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+.year {
+    line-height: 0%;
+}
+
+.character-name {
+    line-height: 0%;
+}
+
+.description {
+    line-height: 0%;
+}
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(66, 5, 5);
+    background-color: #692424;
+    color: rgb(247, 226, 226);
+    text-decoration: none;
+}
+
+* {
+    cursor: url(https://cur.cursors-4u.net/holidays/hol-1/hol17.cur), auto !important;
+}

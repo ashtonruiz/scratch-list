@@ -1,27 +1,33 @@
-## The Golden Rule:
+# VPDB (Like IMDB but just for Vincent Price)
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+## The plan is to create a webpage that catalogs all of Vincent Price's films.
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+![](wireframe.png)
 
-## Making a plan
+## HTML elements
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+    - Header: H1 tag "VPDB" H2 tag: "Like IMDB but just for Vincent Price"
+    - <div id="vincent-list-container">
+    - script tag with src link to Supabase
+    - anchor (a) tag with href "./" to get home
 
-Additional considerations:
+## Events
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+    -Home page load
+        - fetch all the data from Supabase
+        - display all the data from Supabase by looping through, render and append to container
+    -Details page load
+        - fetch just one piece of data from Supabase by unique ID
+        - render based on data from Supabase
+        - use URLSearchParams to get item ID
+
+## Functions
+
+    - fetch.utils
+        - getFilm and getAllFilms
+    - render.utils
+        - renderCard, renderFilmDetail
+
+### fonts
+
+font-family: 'Roboto Condensed', sans-serif;

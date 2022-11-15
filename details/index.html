@@ -8,14 +8,14 @@
 
         <!-- title and favicon -->
         <title>VPDB</title>
-        <link rel="icon" type="image/x-icon" href="assets/ashtonemote.png" />
+        <link rel="icon" type="image/x-icon" href="../assets/ashtonemote.png" />
 
         <!-- js -->
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="detail.js"></script>
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,24 +27,22 @@
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
         <!-- add link for page specific css -->
     </head>
 
     <body>
         <header>
-                <a class="btn-slice" href="./">Home</a>
-                <h1>🕷VPDB🕸</h1>
-                <h2>Like IMDB but only for Vincent Price</h2>
-            </div>
+            <a class="btn-slice" href="../">Home</a>
+            <h1>🕷VPDB🕸</h1>
+            <h2>Like IMDB but only for Vincent Price</h2>
         </header>
         <main>
             <section class="main-section">
-                <h3>Search through Vincent Price's many works for your next movie night</h3>
-                <img class="vincent-img" src="/assets/vincent-15.jpg" />
-                <div id="film-list-container"></div>
+                <img src="../assets/vincent-18.jpg" />
+                <div id="film-detail-container"></div>
             </section>
         </main>
     </body>
