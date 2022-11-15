@@ -7,8 +7,8 @@ export function renderCard(film) {
     div.classList.add('film-card');
 
     p.textContent = film.name;
-    img.src = `./assets/vincent-${film.id}.jpg`;
-    // a.href =
+    img.textContent = img;
+    a.href = `./details/?id=${film.id}`;
 
     div.append(p, img);
 
@@ -19,7 +19,7 @@ export function renderCard(film) {
 
 export function renderFilms(film) {
     const div = document.createElement('div');
-    const img = document.createElement('img');
+    const imgEl = document.createElement('img');
     const descriptionEl = document.createElement('p');
     const filmEl = document.createElement('p');
     const yearEl = document.createElement('p');
@@ -39,9 +39,10 @@ export function renderFilms(film) {
     descriptionEl.textContent = film.description;
     descriptionEl.classList.add('description');
 
-    img.src = `./assets/vincent-${film.id}.jpg`;
+    imgEl.textContent = film.img;
+    imgEl.classList.add('image');
 
-    div.append(filmEl, yearEl, characterNameEl, descriptionEl, img);
+    div.append(filmEl, yearEl, characterNameEl, descriptionEl, imgEl);
 
     return div;
 }

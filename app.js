@@ -1,4 +1,4 @@
-import { getFilm, getFilms } from './fetch.utils';
+import { getFilms } from './fetch.utils.js';
 import { renderFilms } from './render.utils.js';
 
 /* Get DOM Elements */

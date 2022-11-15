@@ -5,11 +5,13 @@ const SUPABASE_KEY =
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getFilms() {
-    const response = await client.from('films').select();
+    // console.log(getFilms);
+    const response = await client.from('Vincent').select();
+    console.log(response);
     return response.data;
 }
 
 export async function getFilm(id) {
-    const response = await client.from('films').select().match({ id: id }).single();
+    const response = await client.from('Vincent').select().match({ id: id }).single();
     return response.data;
 }
